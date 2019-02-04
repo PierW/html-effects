@@ -62,3 +62,29 @@ Camparirà con una lieve transizione di entrata. */
   filter: contrast(0.8) saturate(3);
   transform: scale(1.5);
 }
+
+/* Esercizio 10 */
+.ex-10-icon{
+  animation-name: caricamento;
+  animation-iteration-count: infinite;
+  animation-duration: 3s;
+  animation-timing-function: linear;
+}
+
+@keyframes caricamento {
+  0% {transform: rotate(0);}
+  100% {transform: rotate(360deg);}
+}
+
+/* Esercizio 11 */
+.ex-11-icon:hover{
+  animation-name: speedback;
+  animation-duration: 3s;
+  animation-timing-function: linear;
+}
+
+@keyframes speedback {
+  0% {transform: rotate(0);}
+  75% {transform: rotate(270deg);}
+  100% {transform: rotate(0);}
+}
